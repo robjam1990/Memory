@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="#" Bounds="-1448.19797354148,-449.021259150633,50,25.96" Label="#" UseManualLocation="True" />
+    <Node Id="$" Bounds="-1650.67297354148,-101.141259150633,50,25.96" Label="$" UseManualLocation="True" />
+    <Node Id="&amp;" Bounds="-1208.19797354148,-333.061259150633,50,25.96" Label="&amp;" UseManualLocation="True" />
+    <Node Id="*" Bounds="-1288.33797354148,-217.101259150633,50,25.96" Label="*" UseManualLocation="True" />
+    <Node Id="," Bounds="-1568.19797354148,-333.061259150633,50,25.96" Label="," UseManualLocation="True" />
+    <Node Id="2" Bounds="-1563.76964020815,-217.101259150633,50,25.96" Label="2" UseManualLocation="True" />
+    <Node Id="=" Bounds="-1328.19797354148,-449.021259150633,50,25.96" Label="=" UseManualLocation="True" />
+    <Node Id="@" Bounds="-1208.19797354148,-449.021259150633,50,25.96" Label="@" UseManualLocation="True" />
+    <Node Id="@1" Bounds="-323.959385905868,124.458828616089,142.46,25" Group="Collapsed" Label="(Astrolog&amp;|Analog)" UseManualLocation="True" />
+    <Node Id="@2" Bounds="-151.499385905868,124.458828616089,165.05,25" Group="Collapsed" Label="(Psycholog&amp;|Physiolog)" UseManualLocation="True" />
+    <Node Id="Biolog" Bounds="-127.609385905867,-95.5411713839109,73.8199999999997,25" Group="Collapsed" Label="Biolog" UseManualLocation="True" />
+    <Node Id="C" Bounds="-1437.69130687482,-217.101259150633,50,25.96" Label="C" UseManualLocation="True" />
+    <Node Id="Chronolog" Bounds="-76.5760525725341,69.458828616089,96.2466666666667,25" Group="Collapsed" Label="Chronolog" UseManualLocation="True" />
+    <Node Id="Dialog" Bounds="-23.7893859058681,-95.5411713839109,74.4300000000001,25" Group="Collapsed" Label="Dialog" UseManualLocation="True" />
+    <Node Id="Dictionary" Bounds="-125.237577545165,-90.3077561807529,73.7433333333333,25.9599999999999" Label="Dictionary" />
+    <Node Id="Ecolog" Bounds="-323.959385905868,-40.5411713839109,75.6466666666665,25" Group="Collapsed" Label="Ecolog" UseManualLocation="True" />
+    <Node Id="Encyclopedia" Bounds="-142.141058385972,-145.307756180753,109.1,25" Group="Collapsed" Label="Encyclopedia" UseManualLocation="True" />
+    <Node Id="Geolog" Bounds="-218.312719239201,-40.5411713839109,78.5433333333331,25" Group="Collapsed" Label="Geolog" UseManualLocation="True" />
+    <Node Id="Histolog" Bounds="-323.959385905868,14.4588286160891,84.6199999999999,25" Group="Collapsed" Label="Histolog" UseManualLocation="True" />
+    <Node Id="I" Bounds="-1448.19797354148,-333.061259150633,50,25.96" Label="I" UseManualLocation="True" />
+    <Node Id="Illog" Bounds="-323.959385905868,-95.5411713839109,63.1033333333335,25" Group="Collapsed" Label="Illog" UseManualLocation="True" />
+    <Node Id="Interface" Bounds="-195.922072513663,-296.267957309668,556.306162377758,1215.899474546" Group="Expanded" Label="Interface: Log(99)" UseManualLocation="True" />
+    <Node Id="Library" Bounds="-115.357925676288,-34.3477561807531,55.87,25.96" Label="Library" />
+    <Node Id="Maximum:Log=IC" Category="Comment" Bounds="220.557413156591,857.711397952729,119.826666666667,41.9200000000001" Label="Minimum: Log=I;&#xD;&#xA;Maximum: Log=IC;" UseManualLocation="True" />
+    <Node Id="Mytholog" Bounds="-323.959385905868,69.458828616089,91.4733333333334,25" Group="Collapsed" Label="Mytholog" UseManualLocation="True" />
+    <Node Id="Neuro" Bounds="-230.856052572534,-95.5411713839109,73.2466666666667,25" Group="Collapsed" Label="Neuro" UseManualLocation="True" />
+    <Node Id="Neurons" Bounds="-121.924047128271,-256.267756180753,65.1300000000001,25.9599999999999" Label="Neurons" UseManualLocation="True" />
+    <Node Id="O" Bounds="-1687.46130687482,-217.101259150633,50,25.96" Label="O" UseManualLocation="True" />
+    <Node Id="Quantalog" Bounds="-202.486052572534,69.458828616089,95.9099999999999,25" Group="Collapsed" Label="Quantalog" UseManualLocation="True" />
+    <Node Id="Radiolog" Bounds="-93.4527192392011,14.4588286160891,87.29,25" Group="Collapsed" Label="Radiolog" UseManualLocation="True" />
+    <Node Id="Socio" Bounds="-209.339385905868,14.4588286160891,85.8866666666668,25" Group="Collapsed" Label="Sociolog" UseManualLocation="True" />
+    <Node Id="Theolog" Bounds="-109.769385905868,-40.5411713839109,83.3866666666668,25" Group="Collapsed" Label="Theolog" UseManualLocation="True" />
+    <Node Id="Thesaurus" Bounds="-175.922072513663,-200.307756180753,93.4000000000001,25" Group="Collapsed" Label="Thesaurus" UseManualLocation="True" />
+    <Node Id="^" Bounds="-1328.19797354148,-333.061259150633,50,25.96" Label="^" UseManualLocation="True" />
+    <Node Id="_" Bounds="-1688.19797354148,-333.061259150633,50,25.96" Label="_" UseManualLocation="True" />
+    <Node Id="def00c4a-4848-4bf6-b861-e23926e6ee6d1" Bounds="-574.190734789491,-1197.68072204728,762.573333333333,1893.28" Label="class Encyclopedia //Encyclopedia class to store and display Encyclopedia entries&#xD;&#xA;{&#xD;&#xA;    private static string EncyclopediaFile = &quot;Encyclopedia.e&quot;; //File to store Encyclopedia entries&#xD;&#xA;    &#xD;&#xA;    public void Run()        //Kicks off Encyclopedia app running&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        BackgroundColor = ConsoleColor.White; //Sets the background color to white&#xD;&#xA;        Clear(); //Clears the console window&#xD;&#xA;        Title = &quot;Encyclopedia&quot;; //Sets the title of the console window to &quot;Encyclopedia&quot;&#xD;&#xA;        TextAnimation.EncyclopediaTitle(); //Displays the Encyclopedia title art&#xD;&#xA;        WriteLine(&quot;This is where you can record and review what you've learned.&quot;); //Writes a message to the console window&#xD;&#xA;        CreateEncyclopediaFile(); //Creates the Encyclopedia file if it doesn't exist&#xD;&#xA;        Encyclopedia.EncyclopediaMenu(); //Displays the Encyclopedia menu&#xD;&#xA;    }&#xD;&#xA;    public static void EncyclopediaMenu() // Encyclopedia menu&#xD;&#xA;    {&#xD;&#xA;        string prompt = &quot;Encyclopedia Menu&quot;; // Prompt for the encyclopedia menu&#xD;&#xA;        string[] options = { &quot;Display Encyclopedia&quot;, &quot;Clear Encyclopedia&quot;, &quot;Add Entry&quot;, &quot;Back&quot; }; // Options for the encyclopedia menu&#xD;&#xA;        Menu encyclopediaMenu = new Menu(prompt, options); // Create a new menu object&#xD;&#xA;        int selectedIndex = encyclopediaMenu.Run(); // Run the encyclopedia menu and get the selected index&#xD;&#xA;        if (selectedIndex != -1)&#xD;&#xA;        {&#xD;&#xA;            switch (selectedIndex) // Switch statement based on the selected index&#xD;&#xA;            {&#xD;&#xA;                case 0: // If the selected index is 0&#xD;&#xA;                    Encyclopedia.DisplayEncyclopediaContents(); // Display the encyclopedia contents&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 1: // If the selected index is 1&#xD;&#xA;                    Encyclopedia.ClearEncyclopedia(); // Clear the encyclopedia&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 2: // If the selected index is 2&#xD;&#xA;                    Encyclopedia.AddEntry(); // Add an entry to the encyclopedia&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 3: // If the selected index is 3&#xD;&#xA;                    Menu.MainMenu(); // Run the main menu&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    private void CreateEncyclopediaFile() //Creates the Encyclopedia file if it doesn't exist&#xD;&#xA;    {&#xD;&#xA;        if (!File.Exists(EncyclopediaFile)) //If the Encyclopedia file doesn't exist&#xD;&#xA;        {&#xD;&#xA;            File.CreateText(EncyclopediaFile); //Create the Encyclopedia file&#xD;&#xA;        }&#xD;&#xA;        else //If the Encyclopedia file does exist&#xD;&#xA;        {&#xD;&#xA;            DisplayEncyclopediaContents(); //Display the contents of the Encyclopedia file&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    public static void DisplayEncyclopediaContents() //Displays the contents of the Encyclopedia file&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Blue; //Sets the text color to blue&#xD;&#xA;        string encyclopediaText = File.ReadAllText(EncyclopediaFile); //Reads the contents of the Encyclopedia file&#xD;&#xA;        if (encyclopediaText == &quot;&quot;) //If the Encyclopedia file is empty&#xD;&#xA;        {&#xD;&#xA;            WriteLine(&quot;\nThere are no entries in the Encyclopedia.\nWould you like to add an Entry?&quot;); //Writes a message to the console window&#xD;&#xA;            string Answer = ReadLine(); //Reads the user's input&#xD;&#xA;            if (Answer.ToLower() == &quot;yes&quot; || Answer.ToLower() == &quot;y&quot;) //If the user's input is &quot;yes&quot; or &quot;y&quot;&#xD;&#xA;            {&#xD;&#xA;                AddEntry(); //Add an entry to the Encyclopedia&#xD;&#xA;            }&#xD;&#xA;            else //If the user's input is not &quot;yes&quot; or &quot;y&quot;&#xD;&#xA;            {&#xD;&#xA;                WaitForKey(); //Wait for the user to press a key&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        else //If the Encyclopedia file is not empty&#xD;&#xA;        {&#xD;&#xA;            WriteLine($&quot;\n\tEncyclopedia Contents: \n{encyclopediaText}&quot;); //Writes the contents of the Encyclopedia file to the console window&#xD;&#xA;            WriteLine(&quot;\n~~~End of Encyclopedia~~~&quot;); //Writes a message to the console window&#xD;&#xA;            WaitForKey(); //Wait for the user to press a key&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    public static void ClearEncyclopedia() //Clears the Encyclopedia file&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        File.WriteAllText(EncyclopediaFile, $&quot;\n\tEncyclopedia Contents: \n&quot;); //Clears the Encyclopedia file&#xD;&#xA;        WriteLine(&quot;\nJournal cleared!&quot;); //Writes a message to the console window&#xD;&#xA;        WaitForKey(); //Wait for the user to press a key&#xD;&#xA;    }&#xD;&#xA;    public static void AddEntry() //Adds an entry to the Encyclopedia&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        WriteLine(&quot;\nWhat would you like to add?\n\t(Type EXIT and press enter to stop.)&quot;); //Writes a message to the console window&#xD;&#xA;        ForegroundColor = ConsoleColor.DarkBlue; //Sets the text color to dark blue&#xD;&#xA;        string newEntry = &quot;&quot;; //Initializes a string to store the new entry&#xD;&#xA;        bool shouldContinue = true; //Initializes a boolean to determine if the user should continue adding to the entry&#xD;&#xA;        while (shouldContinue) //While the user should continue adding to the entry&#xD;&#xA;        {&#xD;&#xA;            string line = ReadLine(); //Reads the user's input&#xD;&#xA;            if (!shouldContinue || (ConsoleKey.Escape == ReadKey().Key)) //If the user presses the Escape key&#xD;&#xA;            {&#xD;&#xA;                shouldContinue = false; //Set shouldContinue to false&#xD;&#xA;            }&#xD;&#xA;            else if (line.ToLower() == &quot;&amp;exit&quot;) //If the user's input is &quot;exit&quot;&#xD;&#xA;            {&#xD;&#xA;                shouldContinue = false; //Set shouldContinue to false&#xD;&#xA;            }&#xD;&#xA;            else //If the user's input is not &quot;exit&quot;&#xD;&#xA;            {&#xD;&#xA;                newEntry += line + &quot;\n&quot;; //Add the user's input to the new entry&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        File.AppendAllText(EncyclopediaFile, $&quot;\n\tEntry:\n{newEntry}\n&quot;); //Append the new entry to the Encyclopedia file&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        WriteLine(&quot;The Encyclopedia has been updated!&quot;); //Writes a message to the console window&#xD;&#xA;        WaitForKey(); //Wait for the user to press a key&#xD;&#xA;    }&#xD;&#xA;    private static void WaitForKey() //Waits for the user to press a key&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Gray; //Sets the text color to gray&#xD;&#xA;        WriteLine(&quot;Press any key to continue......&quot;); //Writes a message to the console window&#xD;&#xA;        ReadKey(true); //Reads the user's key input&#xD;&#xA;    }&#xD;&#xA;}" UseManualLocation="True" />
+    <Node Id="|" Bounds="-1568.19797354148,-449.021259150633,50,25.96" Label="|" UseManualLocation="True" />
+    <Node Id="~" Bounds="-1688.19797354148,-449.021259150633,50,25.96" Label="~" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="@1" Target="*" Category="Contains" />
+    <Link Source="@2" Target="$" Category="Contains" />
+    <Link Source="Biolog" Target="~" Category="Contains" />
+    <Link Source="Chronolog" Target="C" Category="Contains" />
+    <Link Source="Dialog" Target="=" Category="Contains" />
+    <Link Source="Dictionary" Target="Library" Bounds="-88.1471869728261,-64.3477561032802,0.353894921998162,21.0013775359576" Label="Update: Public Definitions;" LabelBounds="-83.9702394715226,-61.8607646188782,139.443333333333,15.96" />
+    <Link Source="Ecolog" Target="," Category="Contains" />
+    <Link Source="Encyclopedia" Target="Dictionary" Bounds="-88.0589445204464,-120.307756180753,0.293306330026695,21.0008777185943" Label=".ject: Relevent Context;" LabelBounds="-211.412291374454,-117.815247366285,119.5,15.9600000000005" />
+    <Link Source="Encyclopedia" Target="def00c4a-4848-4bf6-b861-e23926e6ee6d1" Category="Contains" />
+    <Link Source="Geolog" Target="_" Category="Contains" />
+    <Link Source="Histolog" Target="@" Category="Contains" />
+    <Link Source="Illog" Target="|" Category="Contains" />
+    <Link Source="Interface" Target="Dictionary" Category="Contains" />
+    <Link Source="Interface" Target="Encyclopedia" Category="Contains" />
+    <Link Source="Interface" Target="Library" Category="Contains" />
+    <Link Source="Interface" Target="Maximum:Log=IC" Category="Contains" />
+    <Link Source="Interface" Target="Neurons" Category="Contains" />
+    <Link Source="Interface" Target="Thesaurus" Category="Contains" />
+    <Link Source="Mytholog" Target="O" Category="Contains" />
+    <Link Source="Neuro" Target="#" Category="Contains" />
+    <Link Source="Neurons" Target="Dictionary" Bounds="-81.5517578125,-230.307861328125,58.6448822021484,134.958000183105" Label="Update: Public Facts;" LabelBounds="-36.8022267541584,-174.712893413829,108.766666666667,15.96" />
+    <Link Source="Neurons" Target="Encyclopedia" Bounds="-83.4135513305664,-230.307861328125,8.10897827148438,76.1678619384766" />
+    <Link Source="Neurons" Target="Thesaurus" Bounds="-114.989121489364,-230.307857309668,16.3038161697363,22.6911320767041" />
+    <Link Source="Quantalog" Target="2" Category="Contains" />
+    <Link Source="Radiolog" Target="^" Category="Contains" />
+    <Link Source="Socio" Target="&amp;" Category="Contains" />
+    <Link Source="Theolog" Target="I" Category="Contains" />
+    <Link Source="Thesaurus" Target="@1" Category="Contains" />
+    <Link Source="Thesaurus" Target="@2" Category="Contains" />
+    <Link Source="Thesaurus" Target="Biolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Chronolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Dialog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Ecolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Encyclopedia" Bounds="-119.760478587939,-175.307757309668,17.2760631191209,22.8239333334629" Label=".ject: Relevent Observation;" LabelBounds="-255.340462094035,-162.688732163576,142.623333333333,15.96" />
+    <Link Source="Thesaurus" Target="Geolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Histolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Illog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Mytholog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Neuro" Category="Contains" />
+    <Link Source="Thesaurus" Target="Quantalog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Radiolog" Category="Contains" />
+    <Link Source="Thesaurus" Target="Socio" Category="Contains" />
+    <Link Source="Thesaurus" Target="Theolog" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="Comment" Description="Represents a user defined comment on the diagram" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Comments" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <IdentifierAliases>
+    <Alias n="1" Id="(Astrolog&amp;|Analog)" />
+    <Alias n="2" Id="(Psycholog&amp;|Physiolog)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Comment" ValueLabel="Has comment">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

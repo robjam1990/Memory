@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Array" Category="Category4" Bounds="137.545,115.295,63.61,25.96" Label="String(?)" />
+    <Node Id="Array1" Category="Category8" Bounds="139.228333333333,172.9425,60.2433333333333,25.96" Label="Array(*)" />
+    <Node Id="In" Bounds="231.383333333333,0,59.9333333333333,25.96" Label="Input(-)" />
+    <Node Id="Integer" Category="Category7" Bounds="190.263333333333,230.59,72.1733333333333,25.96" Label="Integer(#)" />
+    <Node Id="Output" Bounds="90.7183333333334,403.5325,73.2633333333333,25.96" Label="Output(+)" />
+    <Node Id="SourceCode" Category="Category5" Bounds="125.908333333334,345.885,112.883333333333,25.96" Label="Source^Code=&amp;|" />
+    <Node Id="String" Category="Category1" Bounds="138.53,57.6475,61.64,25.96" Label="String(!)" />
+    <Node Id="String1" Category="Category2" Bounds="230.935,57.6475,60.8299999999999,25.96" Label="String(.)" />
+    <Node Id="String2" Category="Category2" Bounds="0,230.59,64.7,25.96" Label="String(0)" />
+    <Node Id="String3" Category="Category1" Bounds="95,230.59,64.7,25.96" Label="String(1)" />
+    <Node Id="String4" Category="Category9" Bounds="91.765,288.2375,71.17,25.96" Label="String(01)" />
+  </Nodes>
+  <Links>
+    <Link Source="Array" Target="Array1" Bounds="169.350006103516,141.255004882813,0,22.6875" />
+    <Link Source="Array1" Target="Integer" Bounds="195.018417358398,198.902496337891,29.4668731689453,22.8827972412109" />
+    <Link Source="Array1" Target="String2" Bounds="62.2282791137695,195.788635253906,77.0000534057617,30.3330688476563" />
+    <Link Source="Array1" Target="String3" Bounds="119.055244445801,198.902496337891,25.0766677856445,22.9103240966797" />
+    <Link Source="In" Target="String" Bounds="197.691345214844,25.9599990844727,42.9437866210938,26.9087219238281" />
+    <Link Source="In" Target="String1" Bounds="261.350006103516,25.9599990844727,0,22.6875" />
+    <Link Source="Integer" Target="Array1" Bounds="156.666351318359,207.304122924805,35.3246917724609,23.5690307617188" />
+    <Link Source="SourceCode" Target="Output" Bounds="145.946563720703,371.845001220703,24.0195465087891,25.17578125" />
+    <Link Source="String" Target="Array" Bounds="169.350006103516,83.6074981689453,0,22.6875" />
+    <Link Source="String1" Target="Array" Bounds="197.691345214844,83.6074981689453,42.9437866210938,26.9087219238281" />
+    <Link Source="String1" Target="Integer" Bounds="248.339584350586,83.6074981689453,13.0104217529297,140.485687255859" />
+    <Link Source="String2" Target="String4" Bounds="53.7403450012207,256.549987792969,44.5251045227051,27.0185546875" />
+    <Link Source="String3" Target="String4" Bounds="127.349998474121,256.549987792969,0,22.6875" />
+    <Link Source="String4" Target="Output" Bounds="95.3499984741211,314.197509765625,17.5896606445313,82.9142150878906" />
+    <Link Source="String4" Target="SourceCode" Bounds="139.73388671875,314.197509765625,24.0195465087891,25.1757507324219" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
+    <Category Id="Category5" Label="Category 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category7" Label="Category 7" Background="#FF347A30" IsTag="True" />
+    <Category Id="Category8" Label="Category 8" Background="#FF44CCCC" IsTag="True" />
+    <Category Id="Category9" Label="Category 9" Background="#FF00539C" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 5" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 9" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 8" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category8')" />
+      <Setter Property="Background" Value="#FF44CCCC" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 4" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 7" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category7')" />
+      <Setter Property="Background" Value="#FF347A30" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

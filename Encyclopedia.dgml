@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Array" Category="Category9" Bounds="152.410947389017,204.927164454129,172.103333333333,25.96" Label="Array(Conversation_Analysis)" />
+    <Node Id="Array1" Category="Category10" Bounds="447.101881004162,204.927164454129,144.886666666667,25.96" Label="Array(Speaker_Analysis)" />
+    <Node Id="Dictionary" Category="Category9" Bounds="305.951400939367,93.9671644541293,143.246666666667,25" Group="Collapsed" Label="Encyclopedia(Entry)" UseManualLocation="True" />
+    <Node Id="Innput" Bounds="350.237925632119,431.80775200255,50,25.96" Label="Input" />
+    <Node Id="Integer" Category="Category5" Bounds="337.640499779596,375.84775200255,75.3433333333332,25.96" Label="Integer(Id)" />
+    <Node Id="Integer1" Category="Category1" Bounds="552.26995420352,148.967164454129,124.95,25.96" Label="Integer(Confidence)" />
+    <Node Id="Integer2" Category="Category1" Bounds="237.193087536853,148.967164454129,124.95,25.96" Label="Integer(Confidence)" />
+    <Node Id="Output" Bounds="348.422817997598,38.0071644541292,57.8133333333333,25.96" Label="Output" />
+    <Node Id="String" Category="Category2" Bounds="416.022139889334,319.88775200255,100.453333333333,25.9600000000001" Label="String(Speaker)" />
+    <Node Id="String1" Category="Category8" Bounds="241.499088317123,319.88775200255,85.8799999999999,25.9600000000001" Label="String(Topic)" />
+    <Node Id="String2" Category="Category4" Bounds="266.860831272087,260.887164454129,99.3966666666668,25.96" Label="String(Context)" />
+    <Node Id="String3" Category="Category3" Bounds="133.507397938754,263.92775200255,103.353333333333,25.96" Label="String(Location)" />
+    <Node Id="String4" Category="Category2" Bounds="520.731031272087,263.92775200255,82.1566666666665,25.96" Label="String(New)" />
+    <Node Id="String5" Category="Category7" Bounds="396.257597938754,260.887164454129,94.4733333333334,25.96" Label="String(Known)" />
+    <Node Id="String6" Category="Category10" Bounds="49.8496542035197,148.967164454129,157.343333333333,25.96" Label="String(Conversation_Data)" />
+    <Node Id="String7" Category="Category5" Bounds="392.143187536853,148.967164454129,130.126666666667,25.96" Label="String(Speaker_Data)" />
+    <Node Id="c728f886-eac7-41b2-b369-a6dd2ea060111" Bounds="-0.780757453708645,-1612.39634542464,762.573333333333,1893.28" Label="class Encyclopedia //Encyclopedia class to store and display Encyclopedia entries&#xD;&#xA;{&#xD;&#xA;    private static string EncyclopediaFile = &quot;Encyclopedia.e&quot;; //File to store Encyclopedia entries&#xD;&#xA;    &#xD;&#xA;    public void Run()        //Kicks off Encyclopedia app running&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        BackgroundColor = ConsoleColor.White; //Sets the background color to white&#xD;&#xA;        Clear(); //Clears the console window&#xD;&#xA;        Title = &quot;Encyclopedia&quot;; //Sets the title of the console window to &quot;Encyclopedia&quot;&#xD;&#xA;        TextAnimation.EncyclopediaTitle(); //Displays the Encyclopedia title art&#xD;&#xA;        WriteLine(&quot;This is where you can record and review what you've learned.&quot;); //Writes a message to the console window&#xD;&#xA;        CreateEncyclopediaFile(); //Creates the Encyclopedia file if it doesn't exist&#xD;&#xA;        Encyclopedia.EncyclopediaMenu(); //Displays the Encyclopedia menu&#xD;&#xA;    }&#xD;&#xA;    public static void EncyclopediaMenu() // Encyclopedia menu&#xD;&#xA;    {&#xD;&#xA;        string prompt = &quot;Encyclopedia Menu&quot;; // Prompt for the encyclopedia menu&#xD;&#xA;        string[] options = { &quot;Display Encyclopedia&quot;, &quot;Clear Encyclopedia&quot;, &quot;Add Entry&quot;, &quot;Back&quot; }; // Options for the encyclopedia menu&#xD;&#xA;        Menu encyclopediaMenu = new Menu(prompt, options); // Create a new menu object&#xD;&#xA;        int selectedIndex = encyclopediaMenu.Run(); // Run the encyclopedia menu and get the selected index&#xD;&#xA;        if (selectedIndex != -1)&#xD;&#xA;        {&#xD;&#xA;            switch (selectedIndex) // Switch statement based on the selected index&#xD;&#xA;            {&#xD;&#xA;                case 0: // If the selected index is 0&#xD;&#xA;                    Encyclopedia.DisplayEncyclopediaContents(); // Display the encyclopedia contents&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 1: // If the selected index is 1&#xD;&#xA;                    Encyclopedia.ClearEncyclopedia(); // Clear the encyclopedia&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 2: // If the selected index is 2&#xD;&#xA;                    Encyclopedia.AddEntry(); // Add an entry to the encyclopedia&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;                case 3: // If the selected index is 3&#xD;&#xA;                    Menu.MainMenu(); // Run the main menu&#xD;&#xA;                    break; // Break out of the switch statement&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    private void CreateEncyclopediaFile() //Creates the Encyclopedia file if it doesn't exist&#xD;&#xA;    {&#xD;&#xA;        if (!File.Exists(EncyclopediaFile)) //If the Encyclopedia file doesn't exist&#xD;&#xA;        {&#xD;&#xA;            File.CreateText(EncyclopediaFile); //Create the Encyclopedia file&#xD;&#xA;        }&#xD;&#xA;        else //If the Encyclopedia file does exist&#xD;&#xA;        {&#xD;&#xA;            DisplayEncyclopediaContents(); //Display the contents of the Encyclopedia file&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    &#xD;&#xA;    public static void DisplayEncyclopediaContents() //Displays the contents of the Encyclopedia file&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Blue; //Sets the text color to blue&#xD;&#xA;        string encyclopediaText = File.ReadAllText(EncyclopediaFile); //Reads the contents of the Encyclopedia file&#xD;&#xA;        if (encyclopediaText == &quot;&quot;) //If the Encyclopedia file is empty&#xD;&#xA;        {&#xD;&#xA;            WriteLine(&quot;\nThere are no entries in the Encyclopedia.\nWould you like to add an Entry?&quot;); //Writes a message to the console window&#xD;&#xA;            string Answer = ReadLine(); //Reads the user's input&#xD;&#xA;            if (Answer.ToLower() == &quot;yes&quot; || Answer.ToLower() == &quot;y&quot;) //If the user's input is &quot;yes&quot; or &quot;y&quot;&#xD;&#xA;            {&#xD;&#xA;                AddEntry(); //Add an entry to the Encyclopedia&#xD;&#xA;            }&#xD;&#xA;            else //If the user's input is not &quot;yes&quot; or &quot;y&quot;&#xD;&#xA;            {&#xD;&#xA;                WaitForKey(); //Wait for the user to press a key&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        else //If the Encyclopedia file is not empty&#xD;&#xA;        {&#xD;&#xA;            WriteLine($&quot;\n\tEncyclopedia Contents: \n{encyclopediaText}&quot;); //Writes the contents of the Encyclopedia file to the console window&#xD;&#xA;            WriteLine(&quot;\n~~~End of Encyclopedia~~~&quot;); //Writes a message to the console window&#xD;&#xA;            WaitForKey(); //Wait for the user to press a key&#xD;&#xA;        }&#xD;&#xA;    }&#xD;&#xA;    public static void ClearEncyclopedia() //Clears the Encyclopedia file&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        File.WriteAllText(EncyclopediaFile, $&quot;\n\tEncyclopedia Contents: \n&quot;); //Clears the Encyclopedia file&#xD;&#xA;        WriteLine(&quot;\nJournal cleared!&quot;); //Writes a message to the console window&#xD;&#xA;        WaitForKey(); //Wait for the user to press a key&#xD;&#xA;    }&#xD;&#xA;    public static void AddEntry() //Adds an entry to the Encyclopedia&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        WriteLine(&quot;\nWhat would you like to add?\n\t(Type EXIT and press enter to stop.)&quot;); //Writes a message to the console window&#xD;&#xA;        ForegroundColor = ConsoleColor.DarkBlue; //Sets the text color to dark blue&#xD;&#xA;        string newEntry = &quot;&quot;; //Initializes a string to store the new entry&#xD;&#xA;        bool shouldContinue = true; //Initializes a boolean to determine if the user should continue adding to the entry&#xD;&#xA;        while (shouldContinue) //While the user should continue adding to the entry&#xD;&#xA;        {&#xD;&#xA;            string line = ReadLine(); //Reads the user's input&#xD;&#xA;            if (!shouldContinue || (ConsoleKey.Escape == ReadKey().Key)) //If the user presses the Escape key&#xD;&#xA;            {&#xD;&#xA;                shouldContinue = false; //Set shouldContinue to false&#xD;&#xA;            }&#xD;&#xA;            else if (line.ToLower() == &quot;&amp;exit&quot;) //If the user's input is &quot;exit&quot;&#xD;&#xA;            {&#xD;&#xA;                shouldContinue = false; //Set shouldContinue to false&#xD;&#xA;            }&#xD;&#xA;            else //If the user's input is not &quot;exit&quot;&#xD;&#xA;            {&#xD;&#xA;                newEntry += line + &quot;\n&quot;; //Add the user's input to the new entry&#xD;&#xA;            }&#xD;&#xA;        }&#xD;&#xA;        File.AppendAllText(EncyclopediaFile, $&quot;\n\tEntry:\n{newEntry}\n&quot;); //Append the new entry to the Encyclopedia file&#xD;&#xA;        ForegroundColor = ConsoleColor.Black; //Sets the text color to black&#xD;&#xA;        WriteLine(&quot;The Encyclopedia has been updated!&quot;); //Writes a message to the console window&#xD;&#xA;        WaitForKey(); //Wait for the user to press a key&#xD;&#xA;    }&#xD;&#xA;    private static void WaitForKey() //Waits for the user to press a key&#xD;&#xA;    {&#xD;&#xA;        ForegroundColor = ConsoleColor.Gray; //Sets the text color to gray&#xD;&#xA;        WriteLine(&quot;Press any key to continue......&quot;); //Writes a message to the console window&#xD;&#xA;        ReadKey(true); //Reads the user's key input&#xD;&#xA;    }&#xD;&#xA;}" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Array" Target="Integer2" Bounds="252.659308941058,181.000129216496,26.1698627719795,23.9270352376334" />
+    <Link Source="Array" Target="String6" Bounds="162.043123376612,179.009725880385,50.9184544827212,25.9174385737439" Label="Log:(99);" LabelBounds="191.591989895644,175.845892564766,45.1266666666666,15.96" />
+    <Link Source="Array1" Target="Integer1" Bounds="541.626926693839,179.487932669024,43.2774883547803,25.4392317851051" />
+    <Link Source="Array1" Target="String7" Bounds="478.363446136649,180.939245809381,26.7222213601451,23.9879186447485" Label="Log:(99);" LabelBounds="493.060574895666,175.484898814919,45.1266666666667,15.96" />
+    <Link Source="Dictionary" Target="Output" Bounds="377.426646971907,72.9670765215344,0.0928309903131321,21.0000879325949" Label="Generate: Output;" LabelBounds="278.973062466873,75.4959614111294,94.4999999999995,15.96" />
+    <Link Source="Dictionary" Target="c728f886-eac7-41b2-b369-a6dd2ea060111" Category="Contains" />
+    <Link Source="Innput" Target="Integer" Bounds="375.25514589244,410.807744082244,0.0278602159581851,21.0000079203065" Label="Limit: 42 Character/Input;" LabelBounds="237.452409333751,413.325094691832,133.816666666667,15.96" />
+    <Link Source="Integer" Target="String" Bounds="396.405046872002,350.564567128218,41.0859164357603,25.2831848743326" Label="Identify: Speaker Name;" LabelBounds="417.996186228919,364.90948463705,125.556666666667,15.96" />
+    <Link Source="Integer" Target="String1" Bounds="313.180715584453,350.566959457525,41.0533137260656,25.2807925450252" Label="Identify: Conversation Topic;" LabelBounds="183.931993013046,364.910353537056,148.726666666667,15.96" />
+    <Link Source="Integer1" Target="Dictionary" Bounds="439.774129174848,121.017146446715,119.482911281339,27.9500180074136" />
+    <Link Source="Integer2" Target="Dictionary" Bounds="317.894985060849,124.187859459715,34.7958284167205,24.7793049944143" />
+    <Link Source="String" Target="String4" Bounds="488.41421119291,294.435703221403,43.4634021627498,25.4520487811471" Label="Recognize: new Speaker;" LabelBounds="516.58949337104,305.706076317189,129.88,15.96" />
+    <Link Source="String" Target="String5" Bounds="451.738712287942,295.24431449026,9.50414489041634,24.6434375122898" Label="Recognize: Speaker;" LabelBounds="347.627833637246,302.727567863782,104.853333333333,15.96" />
+    <Link Source="String1" Target="String2" Bounds="291.505434730707,294.751717385623,13.6841238880608,25.136034616927" Label="Recognize: Current Context;" LabelBounds="149.807596023294,290.40345478896,146.783333333333,15.96" />
+    <Link Source="String1" Target="String3" Bounds="216.046226180698,294.307844180946,45.3705210396077,25.5799078216038" Label="Recognize: Current Location;" LabelBounds="87.0092439941916,308.839980420295,150.74,15.96" />
+    <Link Source="String2" Target="Array" Bounds="263.892979750315,236.129265869034,34.551581100002,24.7578985850948" Label="Analyze: Prospective Knowledge;" LabelBounds="282.33368172585,230.922490286131,172.76,15.96" />
+    <Link Source="String3" Target="Array" Bounds="196.905228759877,237.566781077088,23.8044119790594,26.3609709254621" Label="Analyze: Situational Knowledge;" LabelBounds="39.3997421665273,233.446864503754,167.923333333333,15.96" />
+    <Link Source="String4" Target="Array1" Bounds="534.08429901844,238.203669486268,18.4270451218881,25.7240825162825" Label="Analyze: Prospective Relation;" LabelBounds="544.923711586526,233.941029807553,156.623333333333,15.96" />
+    <Link Source="String5" Target="Array1" Bounds="461.134388399601,236.221164317948,33.5216714876349,24.666000136181" Label="Analyze: Current Relation;" LabelBounds="479.080557446489,250.16506008739,135.436666666667,15.9600000000001" />
+    <Link Source="String6" Target="Dictionary" Bounds="186.789404971928,120.924069164159,125.887321635525,28.0430952899697" Label="Format: Markdown;" LabelBounds="155.856397614499,114.984443942638,102.64,15.96" />
+    <Link Source="String7" Target="Dictionary" Bounds="402.900781155758,124.11199123887,35.67523160276,24.8551732152596" Label="Format: Markdown;" LabelBounds="424.111393773364,120.492027419735,102.64,15.96" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category10" Label="Category 10" Background="#FF672878" IsTag="True" />
+    <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category3" Label="Category 3" Background="#FF3EBCED" IsTag="True" />
+    <Category Id="Category4" Label="Category 4" Background="#FF1BA1E2" IsTag="True" />
+    <Category Id="Category5" Label="Category 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category7" Label="Category 7" Background="#FF347A30" IsTag="True" />
+    <Category Id="Category8" Label="Category 8" Background="#FF44CCCC" IsTag="True" />
+    <Category Id="Category9" Label="Category 9" Background="#FF00539C" IsTag="True" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 9" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 3" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 4" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 8" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category8')" />
+      <Setter Property="Background" Value="#FF44CCCC" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 10" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category10')" />
+      <Setter Property="Background" Value="#FF672878" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 7" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category7')" />
+      <Setter Property="Background" Value="#FF347A30" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 5" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+  </Styles>
+</DirectedGraph>

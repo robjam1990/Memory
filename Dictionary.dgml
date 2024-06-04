@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="&quot;Space&quot;" Bounds="-399.340625756582,240.241249742508,60.7666666666667,25.96" UseManualLocation="True" />
+    <Node Id="Entry:End;" Bounds="-29.7883958574927,441.381703733865,107.616666666667,25.96" Label="Entry: Word End;" UseManualLocation="True" />
+    <Node Id="Entry:Start;" Bounds="-316.007819035848,483.122635476483,112.09,25.96" Label="Entry: Word Start;" UseManualLocation="True" />
+    <Node Id="Input" Bounds="7.105427357601E-15,0,107.54,25.96" Label="Input: Text Entry;" />
+    <Node Id="Letter" Bounds="20.2816658020019,163.989999313354,50.51,25.96" UseManualLocation="True" />
+    <Node Id="Number" Bounds="154.281665802002,168.482499485016,63.6066666666667,25.96" UseManualLocation="True" />
+    <Node Id="Other" Bounds="-264.006250648499,146.851874613762,50.3533333333333,25.96" UseManualLocation="True" />
+    <Node Id="Output:NewEntries;" Bounds="45.2116041425073,574.361703733865,128.89,25.96" Label="Output: New Entries;" UseManualLocation="True" />
+    <Node Id="Symbol" Bounds="-113.337500432332,156.351874613762,59.1566666666667,25.96" UseManualLocation="True" />
+    <Node Id="Word" Bounds="-8.7883958574927,272.381703733865,50,25.96" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="&quot;Space&quot;" Target="Entry:Start;" Bounds="-363.132437923753,266.201260070801,93.6599806146073,208.710263698493" Label="Remove: &quot;Space&quot;;" LabelBounds="-314.477756125963,353.777550687239,91.7466666666667,15.96" />
+    <Link Source="Entry:End;" Target="&quot;Space&quot;" Bounds="-335.586121816798,270.301872442589,334.246443254353,171.079831291276" />
+    <Link Source="Entry:End;" Target="Output:NewEntries;" Bounds="32.3788180092542,467.341703733865,64.0460686464196,99.4532662247583" Label="Input==False;" LabelBounds="66.0833487269622,500.025484189929,72.7466666666666,15.96" />
+    <Link Source="Entry:Start;" Target="Number" Bounds="-238.320892333984,200.644500732422,404.234466552734,282.478149414063" />
+    <Link Source="Input" Target="Letter" Bounds="46.6396322732328,25.96,6.47868970775697,129.041320949274" />
+    <Link Source="Input" Target="Number" Bounds="63.9636325376595,25.96,106.36900547086,135.444326241014" />
+    <Link Source="Input" Target="Other" Bounds="-206.551329231285,25.96,234.45892461389,117.671843995562" Label="&quot;Space&quot;" LabelBounds="-88.4247425938323,86.58342526648,40.7666666666667,15.96" />
+    <Link Source="Input" Target="Symbol" Bounds="-66.397610567029,25.96,108.750231700579,123.634156664577" />
+    <Link Source="Letter" Target="Word" Bounds="18.8326244354248,189.949996948242,20.0053195953369,73.7298126220703" />
+    <Link Source="Number" Target="Word" Bounds="45.1114513782954,194.442499485016,119.751473122803,73.2432689981384" />
+    <Link Source="Other" Target="&quot;Space&quot;" Bounds="-343.559244314417,172.811874613762,86.6434760807123,62.181845759487" Label="Other=&quot;Space&quot;;" LabelBounds="-299.071386341272,205.5276557342,81.93,15.96" />
+    <Link Source="Symbol" Target="Entry:End;" Bounds="-78.8510043930111,182.311874613762,94.779559378142,250.65156850391" />
+    <Link Source="Word" Target="Letter" Bounds="22.740966796875,198.624969482422,19.9249305725098,73.7567443847656" />
+    <Link Source="Word" Target="Symbol" Bounds="-66.7010541381367,189.130160726599,71.7291495178104,83.2515430072668" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="ZoomLevel" DataType="System.String" />
+  </Properties>
+</DirectedGraph>
